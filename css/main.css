@@ -1,0 +1,121 @@
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: therohitjha Image Slide
+    Description: This is a Image Slide Website Using Javascript
+    Author: Rohit Jha
+-----------------------------------------------------------------------------------
+*/
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    display: flex;
+    height: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    max-width: 75%;
+    margin: auto;
+    height: 100vh;
+    justify-content: space-between;
+
+}
+
+.fade{
+    transition-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+
+@keyframes fade{
+
+    from{
+        opacity: .2;
+    }
+    to {
+opacity: 1;
+    }
+}
+
+
+.content-area{
+    background-color: white; 
+    display: flex; 
+}
+
+
+header{
+    padding: 1.5em;
+    padding-left: 0;
+}
+
+header h1,h3{
+
+    letter-spacing: .1em;
+}
+
+.nav{
+
+display: flex;
+padding: 1em;
+width: 100%;
+background-color: lightgrey;
+}
+
+.nav a{
+    background-color: lightgray;
+    color: black;
+    padding: 1em;
+}
+
+.nav a:hover{
+
+background-color: white;
+transition: all .8s;
+}
+
+@media (max-width: 480px){
+.nav{
+    font-size: 15px;
+    padding: .5em;
+    justify-content: center;
+}
+
+.nav a{
+    padding: .5em;
+}
+
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+background-color: lightgray;
+}
+
+@media (max-width: 480px){
+
+
+    
+    .content-area{
+        display: flex;
+    flex-direction: column;   
+    }
+    
+    main{
+        margin-right: 0;
+    }
+}
